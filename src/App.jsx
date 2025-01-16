@@ -8,6 +8,7 @@ function App() {
     const [isQuizStarted, setIsQuizStarted] = useState(false);
     return (
         <>
+            test-app
             <Navbar/>
             <div className="quiz-container">
                 {
