@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import QuizScreen from './components/QuizScreen.js';
-import StartScreen from './components/StartScreen.js';
+import QuizScreen from './components/QuizScreen.jsx';
+import StartScreen from './components/StartScreen.jsx';
 import Navbar from './components/Navbar.jsx';
 import './App.css'
 
@@ -8,8 +8,8 @@ function App() {
     const [isQuizStarted, setIsQuizStarted] = useState(false);
     return (
         <>
-            test-app
             <Navbar/>
+            console.log(currentQuestionIndex);
             <div className="quiz-container">
                 {
                     isQuizStarted ? (
