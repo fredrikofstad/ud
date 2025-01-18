@@ -2,26 +2,26 @@
   {
     "title": "problem set 1",
     "options": ["1","2","3","4","5"],
-    "correctIndex":"2"
+    "correctIndex":"0"
   },
   {
     "title": "problem set 2",
     "options": ["1","2","3","4","5"],
-    "correctIndex":"4"
+    "correctIndex":"0"
   },
   {
     "title": "problem set 3",
     "options": ["1","2","3","4","5"],
-    "correctIndex":"1"
+    "correctIndex":"0"
   },
   {
     "title": "problem set 4",
     "options": ["1","2","3","4","5"],
-    "correctIndex":"3"
+    "correctIndex":"0"
   },
   {
     "title": "problem set 5",
     "options": ["1","2","3","4","5"],
-    "correctIndex":"3"
+    "correctIndex":"0"
   }
 ]

@@ -12,11 +12,9 @@ function Question({question, totalQuestions, currentQuestion, setAnswer}) {
         if(timer.current) {
             clearTimeout(timer.current);
         }
-        setTimeout(() => {
-            flushSync(()=>{
-                setAnswer(selectedOption);
-            });
-        },0);
+        flushSync(()=>{
+            setAnswer(selectedOption);
+        });
 
         setSelectedOption(null);
     }
