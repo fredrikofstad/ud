@@ -1,7 +1,9 @@
 function Navbar(){
     return(
         <div className="navbar">
-            <div className="logo">Matrigma Quiz</div>
+            <div className="logo">
+                <h3>Matrigma Practice Test</h3>
+            </div>
         </div>
     )
 }

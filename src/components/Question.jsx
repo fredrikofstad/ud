@@ -34,7 +34,7 @@ function Question({question, totalQuestions, currentQuestion, setAnswer}) {
         <div className="question">
             <div className="progress-bar" ref={progressBar}></div>
             <div className="question-count">
-                Problem: <b> {currentQuestion}</b>
+                Problem: <b> {currentQuestion} </b>
                 of
                 <b> {totalQuestions}</b>
             </div>

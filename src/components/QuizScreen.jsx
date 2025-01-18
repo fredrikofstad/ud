@@ -13,7 +13,7 @@ function QuizScreen({retry}) {
     function calculateResult(){
         let correct = 0;
         QuestionList.forEach((question, index) => {
-            if (question.correctIndex == markedAnswers[index]) {
+            if (question.correctIndex === markedAnswers[index]) {
                 correct++;
             }
         });
@@ -40,7 +40,7 @@ function QuizScreen({retry}) {
                        setAnswer={(index)=>{
                            setMarkedAnswers((arr)=>{
                                let newArr = [...arr];
-                               newArr[currentQuestionIndex] = index;
+                               newArr[currentQuestionIndex-1] = index;
                                return newArr;
                            });
                            setCurrentQuestionIndex(currentQuestionIndex+1);
