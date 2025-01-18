@@ -17,6 +17,7 @@ function Question({question, totalQuestions, currentQuestion, setAnswer}) {
         });
 
         setSelectedOption(null);
+        console.log("now");
     }
 
     useEffect(() => {
@@ -38,12 +39,10 @@ function Question({question, totalQuestions, currentQuestion, setAnswer}) {
             </div>
             <div className="main">
                 <div className="title">
-                    <span>Question:</span>
-                    {/* replace with image */}
-                    <p>{question.title}</p>
+                    <img src={"/tasks/" + question.image + ".png"} alt="Task"/>
                 </div>
                 <div className="options">
-                    {
+                {
                         question.options.map((option, index) => {
                             return (
                                 <div
@@ -51,7 +50,7 @@ function Question({question, totalQuestions, currentQuestion, setAnswer}) {
                                     key={index}
                                     onClick={() => setSelectedOption(index)}
                                 >
-                                    {option}
+                                    {""}
                                 </div>
                             );
                         })

@@ -1,32 +1,32 @@
 [
   {
-    "title": "problem set 1",
-    "options": ["1","2","3","4","5"],
-    "correctIndex":"0"
+    "image": "1",
+    "options": ["1","2","3","4","5","6"],
+    "correctIndex":"2"
   },
   {
-    "title": "problem set 2",
-    "options": ["1","2","3","4","5"],
-    "correctIndex":"0"
+    "image": "2",
+    "options": ["1","2","3","4","5","6"],
+    "correctIndex":"3"
   },
   {
-    "title": "problem set 3",
-    "options": ["1","2","3","4","5"],
-    "correctIndex":"0"
+    "image": "3",
+    "options": ["1","2","3","4","5","6"],
+    "correctIndex":"2"
   },
   {
-    "title": "problem set 4",
-    "options": ["1","2","3","4","5"],
-    "correctIndex":"0"
+    "image": "4",
+    "options": ["1","2","3","4","5","6"],
+    "correctIndex":"4"
   },
   {
-    "title": "problem set 5",
-    "options": ["1","2","3","4","5"],
-    "correctIndex":"0"
+    "image": "5",
+    "options": ["1","2","3","4","5","6"],
+    "correctIndex":"3"
   },
   {
-    "title": "problem set 6",
-    "options": ["1","2","3","4","5"],
-    "correctIndex":"0"
+    "image": "6",
+    "options": ["1","2","3","4","5","6"],
+    "correctIndex":"2"
   }
 ]

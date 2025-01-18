@@ -103,23 +103,25 @@ button {
     margin-top: 5px;
     color: #111;
 }
+.quiz-screen .question .main .title img {
+    width: 100%;
+}
 .quiz-screen .question .main .options {
-    margin: 40px 0px 20px;
+    margin: -17.5% 7px 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 5px;
 }
 .quiz-screen .question .main .options .option{
-    width: calc(50% - 20px);
-    border: 1px solid #bbb;
-    padding: 10px;
-    border-radius: 5px;
+    width: calc(10%);
+    padding: 7.5%;
+    border: 2px solid rgba(98, 150, 213, 0);
+    border-radius: 3px;
     cursor: pointer;
 }
 .quiz-screen .question .main .options .option.active{
-    background: #1428cd;
-    color: #fff;
+    border: 2px solid #6296d5;
 }
 .quiz-screen .question .control{
     padding: 10px 20px;

@@ -8,7 +8,8 @@ import QuizResult from "./Results.jsx";
 function QuizScreen({retry}) {
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [markedAnswers, setMarkedAnswers] = useState(new Array(QuestionList.length));
-    const isQuestionEnded = currentQuestionIndex === QuestionList.length;
+    var isQuestionEnded = currentQuestionIndex === QuestionList.length;
+
 
     function calculateResult(){
         console.log(markedAnswers);
@@ -34,20 +35,21 @@ function QuizScreen({retry}) {
                         retry={retry}
                     />
                 ) : (
-                   <Question
-                       question={QuestionList[currentQuestionIndex]}
-                       totalQuestions={QuestionList.length}
-                       currentQuestion={currentQuestionIndex+1}
-                       setAnswer={(index)=>{
-                           setMarkedAnswers((arr)=>{
-                               let newArr = [...arr];
-                               newArr[currentQuestionIndex-1] = index;
-                               return newArr;
-                           });
-                           setCurrentQuestionIndex(currentQuestionIndex+1);
-                       }}
-                   />
+                    <Question
+                        question={QuestionList[currentQuestionIndex]}
+                        totalQuestions={QuestionList.length}
+                        currentQuestion={currentQuestionIndex+1}
+                        setAnswer={(index)=>{
+                            setMarkedAnswers((arr)=>{
+                                let newArr = [...arr];
+                                newArr[currentQuestionIndex-1] = index;
+                                return newArr;
+                            });
+                            setCurrentQuestionIndex(currentQuestionIndex+1);
+                        }}
+                    />
                 )
+
             }
         </div>
     );
