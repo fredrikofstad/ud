@@ -9,7 +9,6 @@ function App() {
     return (
         <>
             <Navbar/>
-            console.log(currentQuestionIndex);
             <div className="quiz-container">
                 {
                     isQuizStarted ? (

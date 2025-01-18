@@ -6,27 +6,25 @@ import Question from "./Question.jsx";
 import QuizResult from "./Results.jsx";
 
 function QuizScreen({retry}) {
-const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-const [markedAnswers, setMarkedAnswers] = useState(new Array(QuestionList.length));
-const isQuestionEnded = currentQuestionIndex === QuestionList.length;
+    const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+    const [markedAnswers, setMarkedAnswers] = useState(new Array(QuestionList.length));
+    const isQuestionEnded = currentQuestionIndex === QuestionList.length;
 
-console.log(currentQuestionIndex);
+    function calculateResult(){
+        let correct = 0;
+        QuestionList.forEach((question, index) => {
+            if (question.correctIndex == markedAnswers[index]) {
+                correct++;
+            }
+        });
+        return {
+                total: QuestionList.length,
+                correct: correct,
+                percentage: Math.trunc((correct / QuestionList.length) * 100)
+        };
+    }
 
-function calculateResult(){
-    let correct = 0;
-    QuestionList.forEach((question, index) => {
-        if (question.correctOptionIndex == markedAnswers[index]) {
-            correct++;
-        }
-    });
-    return {
-            total: QuestionList.length,
-            correct: correct,
-            percentage: Math.trunc((correct / QuestionList.length) * 100)
-    };
-}
-
-return (
+    return (
         <div className="quiz-screen">
             {
                 isQuestionEnded ? (
@@ -51,8 +49,7 @@ return (
                 )
             }
         </div>
-    )
-
+    );
 }
 
 export default QuizScreen;
