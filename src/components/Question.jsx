@@ -1,5 +1,6 @@
 import {useState, useEffect, useRef} from 'react';
 import {flushSync} from "react-dom";
+import {tasks} from "../data/images.js"
 
 const secondsPerQuestion = 60;
 
@@ -39,7 +40,7 @@ function Question({question, totalQuestions, currentQuestion, setAnswer}) {
             </div>
             <div className="main">
                 <div className="title">
-                    <img src={"/tasks/" + question.image + ".png"} alt="Task"/>
+                    <img src={tasks[currentQuestion-1]} alt="Task"/>
                 </div>
                 <div className="options">
                 {
