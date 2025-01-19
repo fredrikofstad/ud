@@ -18,7 +18,6 @@ function Question({question, totalQuestions, currentQuestion, setAnswer}) {
         });
 
         setSelectedOption(null);
-        console.log("now");
     }
 
     useEffect(() => {
@@ -34,9 +33,7 @@ function Question({question, totalQuestions, currentQuestion, setAnswer}) {
         <div className="question">
             <div className="progress-bar" ref={progressBar}></div>
             <div className="question-count">
-                Problem: <b> {currentQuestion} </b>
-                of
-                <b> {totalQuestions}</b>
+                Task: <b> {currentQuestion} </b>
             </div>
             <div className="main">
                 <div className="title">

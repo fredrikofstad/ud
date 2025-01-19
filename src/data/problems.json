@@ -2,31 +2,103 @@
   {
     "image": "1",
     "options": ["1","2","3","4","5","6"],
-    "correctIndex":"2"
+    "correctIndex":"2",
+    "explanation": "The hands of the clock move first one and two quarters, then two and three quarters."
   },
   {
     "image": "2",
     "options": ["1","2","3","4","5","6"],
-    "correctIndex":"3"
+    "correctIndex":"3",
+    "explanation":"The shapes add together, or cancel out if they are the same."
   },
   {
     "image": "3",
     "options": ["1","2","3","4","5","6"],
-    "correctIndex":"2"
+    "correctIndex":"2",
+    "explanation":"Each column have the same patterns but in different layers."
   },
   {
     "image": "4",
     "options": ["1","2","3","4","5","6"],
-    "correctIndex":"4"
+    "correctIndex":"4",
+    "explanation":"The shapes add together, or cancel out if they are the same."
   },
   {
     "image": "5",
     "options": ["1","2","3","4","5","6"],
-    "correctIndex":"3"
+    "correctIndex":"3",
+    "explanation":"The first and third shapes are the same. After a black dot, the following image loses a black area."
   },
   {
     "image": "6",
     "options": ["1","2","3","4","5","6"],
-    "correctIndex":"2"
+    "correctIndex":"2",
+    "explanation":"The same lines cancel out. Different lines produce a solid line."
+  },
+  {
+    "image": "7",
+    "options": ["1","2","3","4","5","6"],
+    "correctIndex":"0",
+    "explanation": "Every iteration horizontal lines are removed from the lower boxes."
+  },
+  {
+    "image": "8",
+    "options": ["1","2","3","4","5","6"],
+    "correctIndex":"1",
+    "explanation": "The quarter circles rotates 90 degrees every iteration, alternating which parts of it are visible."
+  },
+  {
+    "image": "9",
+    "options": ["1","2","3","4","5","6"],
+    "correctIndex":"0",
+    "explanation": "All rows have the same three images but in a different order."
+  },
+  {
+    "image": "10",
+    "options": ["1","2","3","4","5","6"],
+    "correctIndex":"4",
+    "explanation": "Horizontal line goes to the other end and shrinks."
+  },
+  {
+    "image": "11",
+    "options": ["1","2","3","4","5","6"],
+    "correctIndex":"5",
+    "explanation": "The grey area shrinks"
+  },
+  {
+    "image": "12",
+    "options": ["1","2","3","4","5","6"],
+    "correctIndex":"4",
+    "explanation": "All rows have arrows that point right, left, and both ways."
+  },
+  {
+    "image": "13",
+    "options": ["1","2","3","4","5","6"],
+    "correctIndex":"1",
+    "explanation": "All rows have a circle, square, and diamond, and dots that go from one to three vertically."
+  },
+  {
+    "image": "14",
+    "options": ["1","2","3","4","5","6"],
+    "correctIndex":"3",
+    "explanation": "The circle gets darkened by the grey section, which expands to the right."
+  },
+  {
+    "image": "15",
+    "options": ["1","2","3","4","5","6"],
+    "correctIndex":"2",
+    "explanation": "The shape rotates 90 degrees clockwise, inversing its color. The amount shown is also altered."
+  },
+  {
+    "image": "16",
+    "options": ["1","2","3","4","5","6"],
+    "correctIndex":"0",
+    "explanation": "Ignore the middle column. The last row has the patterns switched."
+  },
+  {
+    "image": "17",
+    "options": ["1","2","3","4","5","6"],
+    "correctIndex":"4",
+    "explanation": "The grey are gets smaller."
   }
 ]

@@ -76,6 +76,10 @@ button {
     color: #111;
 }
 
+.timer {
+    margin: -35px 20px 20px;
+}
+
 .quiz-screen .question .progress-bar {
     width: 0;
     height: 7px;
