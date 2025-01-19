@@ -8,16 +8,17 @@ import Timer from "./Timer.jsx";
 
 function QuizScreen({retry}) {
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+    const [completed, setCompleted] = useState(0);
     const [markedAnswers, setMarkedAnswers] = useState(new Array(QuestionList.length));
     const timer = useRef(null);
-    var isQuestionEnded = currentQuestionIndex === QuestionList.length;
+    const isQuestionEnded = currentQuestionIndex === QuestionList.length;
+    var fal = false;
 
     const handleTimeUp = () => {
         setCurrentQuestionIndex(QuestionList.length);
     };
 
     function calculateResult(){
-        console.log(markedAnswers);
         let correct = 0;
         QuestionList.forEach((question, index) => {
             if (question.correctIndex == markedAnswers[index]) {
@@ -25,9 +26,9 @@ function QuizScreen({retry}) {
             }
         });
         return {
-                total: QuestionList.length,
+                total: completed,
                 correct: correct,
-                percentage: Math.trunc((correct / QuestionList.length) * 100)
+                percentage: Math.trunc((correct / completed) * 100)
         };
     }
 
@@ -44,7 +45,6 @@ function QuizScreen({retry}) {
                         <div>
                             <Question
                                 question={QuestionList[currentQuestionIndex]}
-                                totalQuestions={QuestionList.length}
                                 currentQuestion={currentQuestionIndex + 1}
                                 setAnswer={(index) => {
                                     setMarkedAnswers((arr) => {
@@ -54,6 +54,9 @@ function QuizScreen({retry}) {
                                     });
                                     setCurrentQuestionIndex(currentQuestionIndex + 1);
                                 }}
+                                completed={completed}
+                                setCompleted={setCompleted}
+                                ended={isQuestionEnded}
                             />
                         </div>
 

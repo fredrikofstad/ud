@@ -4,10 +4,19 @@ import {tasks} from "../data/images.js"
 
 const secondsPerQuestion = 60;
 
-function Question({question, totalQuestions, currentQuestion, setAnswer}) {
+function Question({question, currentQuestion, setAnswer, completed, setCompleted, ended}) {
     const [selectedOption, setSelectedOption] = useState(null);
     const timer = useRef(null);
     const progressBar = useRef(null);
+
+    if (ended) {
+        return null; // Remove the timer from the DOM
+    }
+
+    function next(){
+        setCompleted(completed+1);
+        gotoNextQuestion();
+    }
 
     function gotoNextQuestion() {
         if(timer.current) {
@@ -56,7 +65,7 @@ function Question({question, totalQuestions, currentQuestion, setAnswer}) {
                 </div>
             </div>
             <div className="control">
-                <button onClick={gotoNextQuestion}>Next</button>
+                <button onClick={next}>Next</button>
             </div>
         </div>
     );
