@@ -1,26 +1,25 @@
 import {useRef, useState} from 'react';
 
-import QuestionList from '../data/problems.json';
-
 import Question from "./Question.jsx";
 import QuizResult from "./Results.jsx";
 import Timer from "./Timer.jsx";
+//import tasks from '../data/problems.json'
 
-function QuizScreen({retry}) {
+
+function QuizScreen({retry, tasks}) {
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [completed, setCompleted] = useState(0);
-    const [markedAnswers, setMarkedAnswers] = useState(new Array(QuestionList.length));
+    const [markedAnswers, setMarkedAnswers] = useState(new Array(tasks.length));
     const timer = useRef(null);
-    const isQuestionEnded = currentQuestionIndex === QuestionList.length;
-    var fal = false;
+    const isQuestionEnded = currentQuestionIndex === tasks.length;
 
     const handleTimeUp = () => {
-        setCurrentQuestionIndex(QuestionList.length);
+        setCurrentQuestionIndex(tasks.length);
     };
 
     function calculateResult(){
         let correct = 0;
-        QuestionList.forEach((question, index) => {
+        tasks.forEach((question, index) => {
             if (question.correctIndex == markedAnswers[index]) {
                 correct++;
             }
@@ -44,7 +43,7 @@ function QuizScreen({retry}) {
                     ) : (
                         <div>
                             <Question
-                                question={QuestionList[currentQuestionIndex]}
+                                question={tasks[currentQuestionIndex]}
                                 currentQuestion={currentQuestionIndex + 1}
                                 setAnswer={(index) => {
                                     setMarkedAnswers((arr) => {
