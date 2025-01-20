@@ -100,5 +100,77 @@
     "options": ["1","2","3","4","5","6"],
     "correctIndex":"4",
     "explanation": "The grey are gets smaller."
+  },
+  {
+    "image": "18",
+    "options": ["1","2","3","4","5","6"],
+    "correctIndex":"5",
+    "explanation": "The rows first add two smaller circles then finally a small and big circle."
+  },
+  {
+    "image": "19",
+    "options": ["1","2","3","4","5","6"],
+    "correctIndex":"0",
+    "explanation": "Center section is the second column's mid section. Mid section is first column's outer section. Outer is first row's center."
+  },
+  {
+    "image": "20",
+    "options": ["1","2","3","4","5","6"],
+    "correctIndex":"3",
+    "explanation": "The hands of the clock move first one and two quarters, then two and three quarters."
+  },
+  {
+    "image": "21",
+    "options": ["1","2","3","4","5","6"],
+    "correctIndex":"5",
+    "explanation": "The circles in rach row disappear from the right."
+  },
+  {
+    "image": "22",
+    "options": ["1","2","3","4","5","6"],
+    "correctIndex":"3",
+    "explanation": "The circle gets darkened by the grey section, which expands to the right."
+  },
+  {
+    "image": "23",
+    "options": ["1","2","3","4","5","6"],
+    "correctIndex":"0",
+    "explanation":"Dotted lines cancel out. Dotted and solid become solid. Solid lines cancel out."
+  },
+  {
+    "image": "24",
+    "options": ["1","2","3","4","5","6"],
+    "correctIndex":"4",
+    "explanation":"Dotted-lines cancel out. Dotted and solid become solid. Solid and solid becomes solid."
+  },
+  {
+    "image": "25",
+    "options": ["1","2","3","4","5","6"],
+    "correctIndex":"0",
+    "explanation": "Every iteration horizontal lines are removed from first the top right then lower left."
+  },
+  {
+    "image": "26",
+    "options": ["1","2","3","4","5","6"],
+    "correctIndex":"3",
+    "explanation": "Every iteration the black bar decreases."
+  },
+  {
+    "image": "27",
+    "options": ["1","2","3","4","5","6"],
+    "correctIndex":"4",
+    "explanation": "The background is the same as the first row. the circles from the first and second row and added."
+  },
+  {
+    "image": "28",
+    "options": ["1","2","3","4","5","6"],
+    "correctIndex":"5",
+    "explanation": "The image from the first row is flipped in the third."
+  },
+  {
+    "image": "29",
+    "options": ["1","2","3","4","5","6"],
+    "correctIndex":"0",
+    "explanation": "The image from the first row is flipped in the third."
   }
 ]

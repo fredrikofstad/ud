@@ -17,7 +17,16 @@ import i16 from './16.png';
 import i17 from './17.png';
 import i18 from './18.png';
 import i19 from './19.png';
-
+import i20 from './20.png';
+import i21 from './21.png';
+import i22 from './22.png';
+import i23 from './23.png';
+import i24 from './24.png';
+import i25 from './25.png';
+import i26 from './26.png';
+import i27 from './27.png';
+import i28 from './28.png';
+import i29 from './29.png';
 
 export const tasks = [
     i1,
@@ -39,4 +48,14 @@ export const tasks = [
     i17,
     i18,
     i19,
+    i20,
+    i21,
+    i22,
+    i23,
+    i24,
+    i25,
+    i26,
+    i27,
+    i28,
+    i29,
 ];
