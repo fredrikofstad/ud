@@ -3,7 +3,6 @@ import {useRef, useState} from 'react';
 import Question from "./Question.jsx";
 import QuizResult from "./Results.jsx";
 import Timer from "./Timer.jsx";
-//import tasks from '../data/problems.json'
 
 
 function QuizScreen({retry, tasks}) {
@@ -25,6 +24,8 @@ function QuizScreen({retry, tasks}) {
             }
         });
         return {
+                array: markedAnswers,
+                tasks: tasks,
                 total: completed,
                 correct: correct,
                 percentage: Math.trunc((correct / completed) * 100)

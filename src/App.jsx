@@ -8,7 +8,7 @@ import Navbar from './components/Navbar.jsx';
 import './App.css'
 
 function App() {
-    const tasks = QuestionList;
+    const tasks = shuffle(QuestionList);
     const [isQuizStarted, setIsQuizStarted] = useState(false);
     return (
         <>
