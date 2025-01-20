@@ -46,7 +46,7 @@ function Question({question, currentQuestion, setAnswer, completed, setCompleted
             </div>
             <div className="main">
                 <div className="title">
-                    <img src={tasks[currentQuestion-1]} alt="Task"/>
+                    <img src={tasks[question.image-1]} alt="Task"/>
                 </div>
                 <div className="options">
                 {

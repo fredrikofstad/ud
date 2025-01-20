@@ -1,4 +1,5 @@
 function StartScreen({start}) {
+
     return (
         <div className="start-screen">
             <h2>Start Test</h2>
