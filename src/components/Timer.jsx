@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 const Timer = ({ onTimeUp }) => {
-  const [timeLeft, setTimeLeft] = useState(10); // 12 minutes in seconds
+  const [timeLeft, setTimeLeft] = useState(12*60); // 12 minutes in seconds
 
   useEffect(() => {
     if (timeLeft <= 0) {
