@@ -11,6 +11,7 @@ function QuizScreen({retry, tasks}) {
     const [markedAnswers, setMarkedAnswers] = useState(new Array(tasks.length));
     const timer = useRef(null);
     const isQuestionEnded = currentQuestionIndex === tasks.length;
+    const incorrect = new Array();
 
     const handleTimeUp = () => {
         setCurrentQuestionIndex(tasks.length);
@@ -21,6 +22,8 @@ function QuizScreen({retry, tasks}) {
         tasks.forEach((question, index) => {
             if (question.correctIndex == markedAnswers[index]) {
                 correct++;
+            } else if(markedAnswers[index] != undefined){
+                incorrect.push(question);
             }
         });
         return {
@@ -28,6 +31,7 @@ function QuizScreen({retry, tasks}) {
                 tasks: tasks,
                 total: completed,
                 correct: correct,
+                incorrect: incorrect,
                 percentage: Math.trunc((correct / completed) * 100)
         };
     }
